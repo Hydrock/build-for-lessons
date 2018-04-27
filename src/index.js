@@ -1,3 +1,13 @@
-const rootElement = document.getElementById('app');
+var React = require('react');
+var ReactDOM = require('react-dom');
 
-rootElement.innerHTML = 'Hello User! This is the application container.';
+class MyComponent extends React.Component {
+    render() {
+        return <div>Hello World</div>;
+    }
+}
+   
+ReactDOM.render(
+    <MyComponent />,
+    document.getElementById('app')
+);
