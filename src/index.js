@@ -4,6 +4,6 @@ import ToDo from 'Components/todo/index.jsx';
 import Toggle from 'Components/toggle/index.jsx';
    
 ReactDOM.render(
-    <Toggle />,
+    <ToDo />,
     document.getElementById('app')
 );

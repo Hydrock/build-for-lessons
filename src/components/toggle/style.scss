@@ -1,0 +1,50 @@
+.app {
+    width: 200px;
+}
+
+// transition
+.toggle-elem {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 2px;
+    margin-top: 40px;
+
+    &_entering {
+        background-color: antiquewhite
+    }
+
+    &_entered {
+        background-color: aqua;
+    }
+
+    &_exiting {
+        background-color: indianred;
+    }
+
+    &_exited {
+        background-color: crimson;
+    }
+}
+
+// css transition
+
+.animate-enter {
+    opacity: 0.01;
+    transform: scale(0.9) translateY(50%);
+  }
+.animate-enter-active {
+    opacity: 1;
+    transform: scale(1) translateY(0%);
+    transition: all 1000ms ease-out;
+}
+.animate-exit {
+    opacity: 1;
+    transform: scale(1) translateY(0%);
+}
+.animate-exit-active {
+    opacity: 0.01;
+    transform: scale(0.9) translateY(50%);
+    transition: all 1000ms ease-out;
+}
