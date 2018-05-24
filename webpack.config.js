@@ -29,10 +29,10 @@ module.exports = {
           require.resolve('style-loader'),
           {
             loader: require.resolve('css-loader'),
-            options: {
-              modules: true,
-              localIdentName: '[name]__[local]___[hash:base64:5]',
-            },
+            // options: {
+            //   modules: true,
+            //   localIdentName: '[name]__[local]___[hash:base64:5]',
+            // },
           },
           {
             loader: require.resolve('postcss-loader'),

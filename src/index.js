@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'Components/app/index.jsx';
+import ToDo from 'Components/todo/index.jsx';
+import Toggle from 'Components/toggle/index.jsx';
    
 ReactDOM.render(
-    <App />,
+    <Toggle />,
     document.getElementById('app')
 );
